@@ -1,0 +1,25 @@
+.about {
+    padding: 175px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        &_info {
+            width: 460px;
+            .about_title { 
+                @extend %title-30fs;
+                margin-top: 20px;
+            }
+            .about_text {
+                margin: 20px 0 0 0;
+                font-family: $base-font-family;
+                font-size: $base-font-size;
+                line-height: 22px;
+                font-weight: 400;
+                color: #555555;
+            }
+        }
+        &_slider {
+            width: 570px;
+        }
+    }
+}

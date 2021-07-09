@@ -1,0 +1,100 @@
+.trial {
+    background-image: url('../images/bg-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 110px 0;
+    position: relative;
+    &_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(58, 110, 255, 0.657);
+        z-index: 5;
+    }
+    &__content{
+        width: 875px;
+        margin-left: 240px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+    }
+    &__content_form {
+        width: 300px;
+        height: 391px;
+        background-color: #ffffff;
+        padding: 40px 0 35px 30px;
+        border-radius: 20px;
+        .form_title {
+            font-family: $base-font-family;
+            font-size: 26px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #5363db; 
+        }
+        .first {
+            width: 240px;
+            height: 265px;
+            margin: 30px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            .input {
+                @extend %input-parametr;
+                
+            }
+            .input::placeholder {
+                @extend %placeholder-parametr;
+            }
+            .select_wrapper {
+                width: 240px;
+                height: 50px;
+                background-color: #f2f2f2;
+                border-radius: 10px;
+                padding: 15px 10px;
+
+            }
+            .select {
+                @extend %select-parametr;
+                option {
+                    color: black;
+                }
+            }
+            .submit_btn {
+                align-self: flex-end;
+                @extend %btn-style;
+                transition: background-color $animation-speed;
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(79, 189, 233);
+                }
+            }
+        }
+    }
+    &__content_title {
+        width: 485px;
+        .maintitle {
+            display: inline-block;
+            width: 485px;
+            margin: 55px 0 25px 0;
+            font-family: $base-font-family;
+            font-size: 48px;
+            line-height: 72px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        .mainsubtitle {
+            display: inline-block;
+            width: 270px;
+            font-family: $freestyle-font-family;
+            font-size: 40px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff;
+
+        }
+    }
+}

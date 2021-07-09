@@ -1,0 +1,96 @@
+footer {
+    padding: 100px 0 0 0;
+    background-color: #5b6ceb;
+}
+.footer__content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+    &_about {
+        flex-basis: calc(100% /2.1);
+        .footer_about {
+            @extend %title-18fs;
+        }
+        .footer_text {
+            margin-top: 60px;
+            font-family: $base-font-family;
+            font-size: $base-font-size;
+            line-height: 22px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+        .social {
+            margin-top: 70px;
+            display: flex;
+            list-style-type: none;
+            &_item {
+                margin-right: 15px;
+            }
+            &_link {
+                font-size: 25px;
+                text-decoration: none;
+                color: white;
+                transition: color $animation-speed;
+                &:hover {
+                    color: rgb(79, 189, 233);
+                }
+            }
+        }
+    }
+    &_contact {
+        flex-basis: calc(100% /2.1);
+        .footer_contact {
+            @extend %title-18fs;
+        }
+        .footer_info {
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            .info_card {
+                flex-basis: calc(100% /2.1);
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 30px;
+            }
+            .info_link {
+                text-decoration: none;
+                font-size: 25px;
+                color: #ffffff;
+                order: 1;
+                transition: color $animation-speed;
+            }
+            .info_text {
+
+                margin-left: 15px;
+                font-family: $base-font-family;
+                font-size: $base-font-size;
+                line-height: 22px;
+                font-weight: 400;
+                color: #ffffff;
+                order: 2;
+                cursor: pointer;
+                &:hover {
+                    ~ .info_link {
+                        color: rgb(79, 189, 233);
+                    }
+                }
+            }
+        }
+    }
+}
+.footer__copyrigth {
+    margin-top: 100px;
+    padding: 40px 0;
+    background-color: #5363d8;
+    text-align: center;
+    &_info {
+        font-family: $footer-font;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        color: #b7bffc;
+    }
+}

@@ -1,0 +1,19 @@
+@import 'suply/iconstyle';
+@import 'suply/fonts';
+@import 'suply/variables';
+@import 'suply/extend';
+@import 'suply/mixin';
+@import 'suply/norm';
+@import 'section/header';
+@import 'section/trial';
+@import 'section/program';
+@import 'section/cards';
+@import 'section/about';
+@import 'section/inform';
+@import 'section/price';
+@import 'section/footer';
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
