@@ -1,0 +1,378 @@
+@media (min-width: 768px) {
+    // Header start
+    .header__content {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0;
+        &_nav{
+            .opener-menu {
+                display: none;
+            }
+            .menu {
+                position: static;
+                display: flex;
+                list-style-type: none;
+                height: auto;
+                &_item {
+                    opacity: 1;
+                    visibility: visible;
+                    margin-right: 20px;
+                    margin-bottom: 0;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                
+            }
+        }
+    }
+// Header end
+
+// Trial start
+    .trial {
+        padding: 75px 0;
+        &__content{
+            width: 100%;
+            padding: 0 65px 0 25px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        &__content_title {
+            width: 50%;
+            text-align: left;
+            .maintitle {
+                margin: 55px 0 20px 0;
+                font-size: 45px;
+                line-height: 60px;
+                
+            }
+            .mainsubtitle {
+                padding: 0 40px 0 0;
+                font-size: 40px;
+            }
+        }
+    }
+// Trial end
+
+// Program start
+    .program {
+        padding: 75px 0;
+    }
+    .program__content {
+        width: 100%;
+        margin: 25px auto 0 auto;
+        &_cards { 
+            flex-basis: calc( 100% / 2.05);
+            height: 400px;
+            margin-bottom: 25px;
+            flex-direction: row;
+            .img_wraper {
+                flex-basis: calc( 100% / 1.9);
+                height: 400px;
+                overflow: hidden;
+            }
+            .card_img {
+                width: auto;
+                height: 100%;
+                transform: translateX(-33%);
+            }
+            .card__text {
+                margin-top: 50px;
+                flex-basis: calc( 100% / 2.1);
+                padding: 0 0 0 20px;
+                &_descr {
+                    margin-top: 20px;
+                    width: 95%;
+                }
+                &_name {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+// Program end
+// Cards start 
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+    }
+// Cards end
+// About start 
+    .about {
+        padding: 50px 0;
+        &__content {
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+            &_info {
+                margin: 0;
+                width: 35%;
+                
+            }
+            &_slider {
+                margin: 50px 15px 0 0;
+                width: 325px;
+                .slick-slide {
+                    width: 325px;
+                    height: 170px;
+                }
+            }
+        }
+    }
+// About end
+// Inform start 
+    .inform {
+        padding: 75px 0;
+        &__content {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &_card {
+                margin-bottom: 55px;
+                flex-basis:  calc(100% / 4.1);
+                .inform_title {
+                    margin: 20px 0 0 0;
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+// Inform end
+
+// Price start
+    .price {
+        &__content {
+            width: 100%;
+            justify-content: space-around;
+            &_card {
+            width: 360px;
+            }
+        } 
+    }
+// Price end
+
+// Footer start
+    footer {
+        padding: 75px 0 0 0;
+    }
+    .footer__content {
+        width: 100%;
+        padding: 0 15px;
+        text-align: left;
+        justify-content: start;
+        &_about {
+            .footer_text {
+                margin-top: 40px;
+            }
+        }
+        &_contact {
+            margin-top: 30px;
+            .footer_info {
+                margin-top: 40px;
+                justify-content: space-between;
+                .info_card {
+                    flex-basis: calc(100% / 2.2);
+                    margin: 0 0 20px 0;
+                    justify-content: start;
+                }
+            }
+        }
+        .social {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+// Footer end
+}
+@media (min-width: 1200px) {
+// Header start
+    .header__content {
+        width: 1200px;
+        margin: 0 auto;
+        &_nav{
+            .menu {
+                &_item {
+                    margin-right: 28.5px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                
+            }
+        }
+    }
+// Header end
+
+// Trial start
+    .trial {
+        padding: 100px 0 110px 0;
+        &__content{
+            width: 875px;
+            margin-left: 240px;
+            justify-content: space-between;
+            padding: 0;
+        }
+        &__content_form {
+            .first {
+                .submit_btn {
+                    align-self: flex-end;
+                    margin-top: 33px;
+                }
+            }
+        }
+        &__content_title {
+            width: 480px;
+            .maintitle {
+                display: inline-block;
+                width: 485px;
+                margin: 55px 0 25px 0;
+                font-size: 48px;
+                line-height: 72px;
+            }
+            .mainsubtitle {
+                width: 270px;
+                font-size: 40px;
+                line-height: 1.2;
+                padding: 0;
+            }
+        }
+    }
+// Trial end
+
+// Program start
+    .program {
+        padding: 112px 0 190px 0;
+    }
+    .program__content {
+        width: 100%;
+        margin-top: 55px;
+        &_cards { 
+            width: 570px;
+            height: 300px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            .img_wraper {
+                width: 270px;
+                height: 300px;
+                overflow: visible;
+            }
+            .card_img {
+                width: 270px;
+                height: 300px;
+                transform: translateX(0);
+            }
+            .card__text {
+                margin-top: 48px;
+                width: 270px;
+                padding: 0;
+                &_descr {
+                    margin-top: 28px;
+                    width: 220px;
+                }
+                &_name {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+// Program end
+// About start 
+    .about {
+        padding: 168px 0;
+        &__content {
+            &_info {
+                width: 460px;
+                .about_title { 
+                    margin-top: 15px;
+                }
+            }
+            &_slider {
+                margin: 0;
+                width: 570px;
+                .slick-slide {
+                    width: 570px;
+                    height: 300px;
+                }
+
+            }
+        }
+    }
+// About end
+// Inform start 
+    .inform {
+        padding: 130px 0 75px 0;
+        &__content {
+            &_card {
+                margin-bottom: 55px;
+                .inform_title {
+                    margin: 30px 0 0 0;
+                }
+                .inform_text {
+                    margin: 13px 0 0 0;
+                }
+            }
+        }
+    }
+// Inform end
+
+// Price start
+    .price {
+        padding: 100px 0 110px 0;
+        background-position: bottom 0 right 0;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        &__content {
+            justify-content: space-between;
+            &_card {
+            width: 370px;
+            margin-bottom: 0;
+            }
+        } 
+    }
+// Price end
+
+// Footer start
+    footer {
+        padding: 92px 0 0 0;
+    }
+    .footer__content {
+        width: 1200px;
+        justify-content: space-between;
+        &_about {
+            flex-basis: calc(100% /2.1);
+            .footer_text {
+                margin-top: 52px;
+            }
+        }
+        &_contact {
+            flex-basis: calc(100% /2.05);
+            margin-top: 0;
+            .footer_info {
+                margin-top: 50px;
+                .info_card {
+                    flex-basis: calc(100% /2.05);
+                    align-items: flex-start;
+                    margin-bottom: 25px;
+                }
+                .info_text {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .social {
+            margin-top: 18px;
+            &_item {
+                margin-right: 15px;
+            }
+        }
+    }
+    .footer__copyrigth {
+        margin-top: 100px;
+        padding: 40px 0;
+    }
+// Footer end
+}

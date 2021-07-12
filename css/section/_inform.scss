@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 125px 0 70px 0;
+    padding: 50px 0;
     position: relative;
     &_bg {
         position: absolute;
@@ -15,14 +15,14 @@
         z-index: 5;
     }
     &__content {
+        width: 300px;
+        margin: 0 auto;
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         position: relative;
+        flex-direction: column;
         z-index: 10;
         &_card {
-            margin-bottom: 60px;
-            flex-basis:  calc(100% / 4.1);
+            margin-bottom: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -38,11 +38,11 @@
             }
             .inform_title {
                 @extend %title-18fs;
-                margin: 25px 0 0 0;
+                margin: 15px 0 0 0;
                 flex-grow: 1;
             }
             .inform_text {
-                margin: 20px 0 0 0;
+                margin: 10px 0 0 0;
                 font-family: $base-font-family;
                 font-size: 16px;
                 line-height: 27px;
@@ -52,3 +52,39 @@
         }
     }
 }
+// @media (min-width: 768px) {
+//     .inform {
+//         padding: 75px 0;
+//         &__content {
+//             width: 100%;
+//             flex-direction: row;
+//             justify-content: space-between;
+//             flex-wrap: wrap;
+//             &_card {
+//                 margin-bottom: 55px;
+//                 flex-basis:  calc(100% / 4.1);
+//                 .inform_title {
+//                     margin: 20px 0 0 0;
+//                     flex-grow: 1;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .inform {
+//         padding: 130px 0 75px 0;
+//         &__content {
+//             &_card {
+//                 margin-bottom: 55px;
+//                 .inform_title {
+//                     margin: 30px 0 0 0;
+//                 }
+//                 .inform_text {
+//                     margin: 13px 0 0 0;
+//                 }
+//             }
+//         }
+//     }
+// }
